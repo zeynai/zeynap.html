@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:#2f435b;
+    color:white;
+    padding:30px 20px;
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    padding:15px 25px;
+}
+
+.sidebar ul li:hover{
+    background:#44515d;
+}
+
+.sidebar ul li a{
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+
+/* Main Content */
+.main-content{
+    flex:1;
+    padding:20px;
+}
+
+/* Header */
+.header{
+    background:#2f435b;
+    color:white;
+    text-align:center;
+    padding:18px;
+    border-radius:8px;
+    margin-bottom:25px;
+}
+
+/* Card */
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#333;
+}
+
+.card p{
+    margin:10px 0;
+    color:#666;
+    line-height:1.6;
+}
+
+
+</style>
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="student.html">Students</a></li>
+                <li><a href="setting.html">Settings</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <div class="header">
+                <h1>Welcome to Student Dashboard</h1>
+            </div>
+
+            <div class="card">
+                <h2>Hello Administrator 👋</h2>
+                <p>
+                    Use the sidebar to manage students, adjust settings,
+                    or securely logout.
+                </p>
+                <p>
+                    This dashboard helps you track, update, and organize
+                    student information easily.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

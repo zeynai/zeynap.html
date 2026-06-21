@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            height: 100vh;
+            background: #2f435b;
+            color: white;
+            padding: 30px 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            padding: 15px 25px;
+        }
+
+        .sidebar ul li:hover {
+            background: #44515d;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            background: #e3f2fd;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+            font-size: 28px;
+            background: #2f435b;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background: #007bff;
+            color: white;
+        }
+
+        th {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 20px 25px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background: #f0f8ff;
+        }
+
+        .photo-cell {
+            width: 80px;
+            height: 80px;
+        }
+
+        .photo-cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .edit {
+            background: green;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .delete {
+            background: red;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .edit:hover {
+            background: darkgreen;
+        }
+
+        .delete:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="student.html">Students</a></li>
+                <li><a href="setting.html">Settings</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>Student Information Dashboard</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>PHOTO</th>
+                        <th>ID</th>
+                        <th>NAME</th>
+                        <th>MATH</th>
+                        <th>ENGLISH</th>
+                        <th>SCIENCE</th>
+                        <th colspan="1">EDIT</th>
+                        <th colspan="1">DELETE</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="photo-cell"><img src="WhatsApp Image 2026-06-21 at 10.18.56 AM.jpeg" alt="farax c.qaadir"></td>
+                        <td>C1240001</td>
+                        <td>farax c.qadir</td>
+                        <td>85</td>
+                        <td>90</td>
+                        <td>78</td>
+                        <td><button class="edit">Edit</button></td>
+                        <td><button class="delete">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td class="photo-cell"><img src="WhatsApp Image 2026-06-21 at 10.19.44 AM.jpeg" alt="mohamed ali"></td>
+                        <td>C1240003</td>
+                        <td>mohamed ali</td>
+                        <td>76</td>
+                        <td>81</td>
+                        <td>89</td>
+                        <td><button class="edit">Edit</button></td>
+                        <td><button class="delete">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td class="photo-cell"><img src="WhatsApp Image 2026-06-21 at 10.18.56 AM.jpeg" alt="maxamed xeydar"></td>
+                        <td>C1240004</td>
+                        <td>maxamed xeydar</td>
+                        <td>76</td>
+                        <td>81</td>
+                        <td>89</td>
+                        <td><button class="edit">Edit</button></td>
+                        <td><button class="delete">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
